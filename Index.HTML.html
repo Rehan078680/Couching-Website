@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rehan Coaching Center</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    /* Preloader */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      color: #00ffcc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 9999;
+    }
+
+    /* Typing effect */
+    .typing {
+      font-size: 26px;
+      border-right: 2px solid #00ffcc;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards,
+                 blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 330px; } /* adjust according to text length */
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* Content (hidden initially) */
+    .content {
+      display: none;
+      padding: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="typing">🚀 Launching Coaching Center</div>
+  </div>
+
+  <!-- Main Website -->
+  <div class="content">
+    <h1>Welcome to Rehan Coaching Center</h1>
+    <p>Yahaan tera asli website content aayega.</p>
+  </div>
+
+  <script>
+    // Jab pura page load ho jaye
+    window.addEventListener("load", function(){
+      setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+        document.querySelector(".content").style.display = "block";
+      }, 4500); // 4.5 sec ke baad hide hoga
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rehan Coaching Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #0b5ed7;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px 0;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588075592446-265fd1e6e76c') no-repeat center center/cover;
+      color: black;
+      text-align: center;
+      padding: 100px 20px;
+      border-radius: 10px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      margin: 40px 0;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> Rehan Coaching Center </h1>
+    <p>Best Coaching for 9th - 12th Students</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Welcome to Rehan Coaching Center </h1>
+      <p>Quality Education & Experienced Teachers</p>
+    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .plan-card {
+      background: #fff;
+      padding: 25px;
+      width: 280px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .plan-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #111827;
+    }
+
+    .price span {
+      font-size: 14px;
+      font-weight: normal;
+      color: #6b7280;
+    }
+
+    .plan-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      text-align: left;
+    }
+
+    .plan-card ul li {
+      margin: 10px 0;
+      font-size: 15px;
+      color: #374151;
+    }
+
+    /* 🌟 New Stylish Button */
+    .plan-card button {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+    }
+
+    .plan-card button:hover {
+      background: linear-gradient(135deg, #1e40af, #2563eb);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 14px rgba(30, 64, 175, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section">
+    <h2>Our Plans</h2>
+    
+    <div class="plans">
+      <!-- Basic Plan -->
+      <div class="plan-card">
+        <h3>Basic</h3>
+        <p class="price">₹299<span>/month</span></p>
+        <ul>
+          <li>✔ Access to Classes</li>
+          <li>✔ Study Materials</li>
+          <li>✔ Doubt Sessions</li>
+        </ul>
+        <button>Choose Plan</button>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="plan-card">
+        <h3>Standard</h3>
+        <p class="price">₹399<span>/month</span></p>
+        <ul>
+          <li>✔ Access to Classes</li>
+          <li>✔ Extra Notes</li>
+          <li>✔ Online Support</li>
+        </ul>
+        <button>Choose Plan</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="plan-card">
+        <h3>Premium</h3>
+        <p class="price">₹599<span>/month</span></p>
+        <ul>
+          <li>✔ All Standard Features</li>
+          <li>✔ Personal Mentor</li>
+          <li>✔ Weekly Tests</li>
+        </ul>
+        <button>Choose Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <body><!-- ================== TESTIMONIALS CAROUSEL ================== -->
+<section class="testimonials">
+  <div class="t-head">
+    <span class="tag">What Students Say</span>
+    <h2>Our Toppers & Happy Students</h2>
+    <p>Quality Education • Doubt Support • Regular Tests</p>
+  </div>
+
+  <div class="carousel">
+    <div class="slides">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <p>“Rehan Coaching ke test series aur daily doubts se mera base strong ho gaya.
+        Pre-boards me <b>95%</b> aaye. Notes bahut clean aur exam-oriented the.”</p>
+        <h3>— Arjun Verma (Class 10)</h3>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <p>“Online support se doubts turant clear ho jate the. Weekly tests se confidence aaya.
+        Boards me Organic Chemistry easy lagne laga.”</p>
+        <h3>— Sana Sheikh (Class 12)</h3>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <p>“Faculty friendly hai aur homework checking strict. Mera focus improve hua.
+        Parent-Teacher meeting se progress track karna easy ho gaya.”</p>
+        <h3>— Prateek Singh (Class 9)</h3>
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
+<!-- ================== STYLES ================== -->
+<style>
+.testimonials{
+  background:#f6f8fb;
+  padding:64px 16px;
+  border-radius:24px;
+  max-width:800px;
+  margin:48px auto;
+  text-align:center;
+}
+.t-head .tag{
+  display:inline-block;
+  font-size:12px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  background:rgba(37,99,235,.08);
+  color:#2563eb;
+  padding:6px 10px;
+  border-radius:999px;
+  margin-bottom:8px;
+}
+.t-head h2{ margin:6px 0 4px; font-size:26px; color:#0f172a; }
+.t-head p{ color:#64748b; }
+
+.carousel{
+  position:relative;
+  overflow:hidden;
+  margin-top:24px;
+}
+.slides{
+  display:flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide{
+  min-width:100%;
+  box-sizing:border-box;
+  padding:20px;
+}
+.slide p{
+  font-size:18px;
+  line-height:1.6;
+  color:#1f2937;
+  margin-bottom:10px;
+}
+.slide h3{ color:#2563eb; font-weight:600; }
+
+.prev, .next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:rgba(37,99,235,0.8);
+  color:white;
+  border:none;
+  font-size:24px;
+  padding:8px 12px;
+  border-radius:50%;
+  cursor:pointer;
+  user-select:none;
+}
+.prev{ left:10px; }
+.next{ right:10px; }
+.prev:hover, .next:hover{ background:#2563eb; }
+</style>
+
+<!-- ================== SCRIPT ================== -->
+<script>
+const slides = document.querySelector('.slides');
+const slide = document.querySelectorAll('.slide');
+let index = 0;
+
+function showSlide(i){
+  if(i >= slide.length) index = 0;
+  else if(i < 0) index = slide.length - 1;
+  else index = i;
+  slides.style.transform = `translateX(${-index * 100}%)`;
+}
+
+// Buttons
+document.querySelector('.prev').addEventListener('click', ()=> showSlide(index-1));
+document.querySelector('.next').addEventListener('click', ()=> showSlide(index+1));
+
+// Auto Slide
+setInterval(()=> showSlide(index+1), 4000); // 4 sec auto-slide
+</script></body>
+    </html>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <div class="card">
+        <p>
+          Rehan Coaching Center is dedicated to providing the best education for students of classes 9th to 12th. 
+          With experienced teachers and personalized guidance, we help students achieve their academic goals.
+        </p>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+      <h2>Our Courses</h2>
+      <div class="card">
+        <h3>Class 9th & 10th (All Subjects)</h3>
+        <p>Strong foundation for board exams with conceptual clarity.</p>
+      </div>
+      <div class="card">
+        <h3>Class 11th & 12th (Science/Commerce)</h3>
+        <p>Specialized coaching for Physics, Chemistry, Maths, Biology, Accountancy & Economics.</p>
+      </div>
+      <div class="card">
+        <h3>Competitive Exams</h3>
+        <p>Preparation for NEET, JEE, and other competitive entrance exams.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <div class="card">
+   <p><strong>Address:</strong> Near Jain Lodge,Banda</p>
+<p><strong>Phone:</strong> +91 8318320035</p>
+<p><strong>Email:</strong> info@abccoaching.com</p>
+
+<!-- WhatsApp Button -->
+<div id="whatsapp">
+  <a href="https://wa.me/918318320035" target="_blank" 
+   style="display:inline-flex;align-items:center;gap:8px;
+          background-color:#25D366;color:white;
+          padding:10px 16px;border-radius:30px;
+          font-weight:bold;text-decoration:none;
+          box-shadow:0 4px 6px rgba(0,0,0,0.2);
+          transition:all 0.3s;">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+        alt="WhatsApp" width="22" height="22">
+  Contact Now
+</a>
+</div>
+       
+        
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Rehan Coaching Center | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
